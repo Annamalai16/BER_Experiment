@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+        <title>BER Experiment</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h5>BER Experiment</h5>
+            <br><br>
+            <label>Bits : </label>
+            <input type="text" placeholder="Enter the bits" id="bitsInput">
+            <br><br><br>
+
+            <label>Current (I) : </label>
+            <input type="number" placeholder="Enter current(I)" id="currentInput">
+            <br><br><br>
+
+            <input type="submit" value="CALCULATE" onclick="calculateBER()">
+        </div>
+        <div class="container" style="display: none;text-align: center;" id="values">
+            <h5>Values</h5>
+            <br>
+            <p id="onesCount"></p>
+            <p id="Pint"></p>
+            <p><b>Optical power from LED</b></p>
+            <p id="Pled"></p>
+            <p><b>Photo Diode</b></p>
+            <p id="Ip"></p>
+        </div>
+        
+        
+    </body>
+</html>
